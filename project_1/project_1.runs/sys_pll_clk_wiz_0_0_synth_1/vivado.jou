@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Oct 15 14:49:48 2018
+# Process ID: 8000
+# Current directory: C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.runs/sys_pll_clk_wiz_0_0_synth_1
+# Command line: vivado.exe -log sys_pll_clk_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sys_pll_clk_wiz_0_0.tcl
+# Log file: C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.runs/sys_pll_clk_wiz_0_0_synth_1/sys_pll_clk_wiz_0_0.vds
+# Journal file: C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.runs/sys_pll_clk_wiz_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sys_pll_clk_wiz_0_0.tcl -notrace

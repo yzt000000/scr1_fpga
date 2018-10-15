@@ -1,0 +1,367 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Oct 15 16:06:25 2018
+| Host         : laba01 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file arty_scr1_top_methodology_drc_routed.rpt -pb arty_scr1_top_methodology_drc_routed.pb -rpx arty_scr1_top_methodology_drc_routed.rpx
+| Design       : arty_scr1_top
+| Device       : xcvu9p-flga2104-2L-e
+| Speed File   : -2L
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 57
++-----------+----------+-------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                 | Violations |
++-----------+----------+-------------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                                | 6          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain             | 1          |
+| SYNTH-10  | Warning  | Wide multiplier                                             | 4          |
+| SYNTH-15  | Warning  | Byte wide write enable not inferred                         | 16         |
+| TIMING-1  | Warning  | Invalid clock waveform on Clock Modifying Block             | 1          |
+| TIMING-3  | Warning  | Invalid primary clock on Clock Modifying Block              | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic                                           | 1          |
+| TIMING-10 | Warning  | Missing property on synchronizer                            | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                               | 8          |
+| TIMING-35 | Warning  | No common node in paths with the same clock                 | 1          |
+| XDCB-4    | Warning  | create_clock constraint set on both sides of diff pair port | 1          |
+| XDCH-2    | Warning  | Same min and max delay values on IO port                    | 16         |
++-----------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell hard_rst_in_sync[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) hard_rst_in_sync_reg[0]/CLR, hard_rst_in_sync_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X70Y484 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at i_scr1/i_core_top/i_pipe_top/i_pipe_exu/i_ialu/mul_res0 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at i_scr1/i_core_top/i_pipe_top/i_pipe_exu/i_ialu/mul_res0__0 of size 16x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at i_scr1/i_core_top/i_pipe_top/i_pipe_exu/i_ialu/mul_res0__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at i_scr1/i_core_top/i_pipe_top/i_pipe_exu/i_ialu/mul_res0__2 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-15#1 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_0_bram_0 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#2 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_0_bram_1 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#3 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_0_bram_2 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#4 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_0_bram_3 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#5 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_1_bram_0 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#6 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_1_bram_1 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#7 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_1_bram_2 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#8 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_1_bram_3 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#9 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_2_bram_0 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#10 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_2_bram_1 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#11 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_2_bram_2 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#12 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_2_bram_3 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#13 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_3_bram_0 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#14 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_3_bram_1 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#15 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_3_bram_2 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+SYNTH-15#16 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM i_scr1/i_tcm/i_dp_memory/ram_block_reg_3_bram_3 because address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal.
+Related violations: <none>
+
+TIMING-1#1 Warning
+Invalid clock waveform on Clock Modifying Block  
+Invalid clock waveform for clock SYS_CLK specified at a PLLE4_ADV output i_sys_pll/clk_wiz_0/inst/plle4_adv_inst/CLKOUT0 that does not match the CMB settings. The waveform of the clock is 20 {0 10}. The expected waveform is 20 {3.2 13.2}
+Related violations: <none>
+
+TIMING-3#1 Warning
+Invalid primary clock on Clock Modifying Block  
+A primary clock SYS_CLK is created on the output pin or net i_sys_pll/clk_wiz_0/inst/plle4_adv_inst/CLKOUT0 of a Clock Modifying Block
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on FTDI_TXD relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on JD[0] relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on JD[1] relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on JD[3] relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on JD[5] relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on JD[6] relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on RESETn relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on FTDI_RXD relative to clock(s) SYS_CLK
+Related violations: <none>
+
+TIMING-35#1 Warning
+No common node in paths with the same clock  
+The clock dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK has paths without a common node. First path found between dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/iTDO_reg/C and dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TDO. Please review clock constraints
+Related violations: <none>
+
+XDCB-4#1 Warning
+create_clock constraint set on both sides of diff pair port  
+Two clock definitions clk_in_p and OSC_100 found on differential ports clk_in_p and clk_in_n. It is recommended to only create a clock on port P.
+create_clock -period 6.400 [get_ports clk_in_p]
+c:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/sources_1/bd/sys_pll/ip/sys_pll_clk_wiz_0_0/sys_pll_clk_wiz_0_0.xdc (Line: 56)
+create_clock -period 6.400 -name OSC_100 -waveform {0.000 3.200} -add [get_ports clk_in_n]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_synth.xdc (Line: 11)
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.300 ns has been defined on port 'FTDI_TXD' relative to clock SYS_CLK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks SYS_CLK_VIRT] 3.300 [get_ports FTDI_TXD]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 17)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 3.300 ns has been defined on port 'RESETn' relative to clock SYS_CLK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks SYS_CLK_VIRT] 3.300 [get_ports RESETn]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 16)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 6.600 ns has been defined on port 'JD[2]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[2]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 19)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 6.600 ns has been defined on port 'JD[4]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[4]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 20)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 6.600 ns has been defined on port 'JD[5]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[5]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 21)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 6.600 ns has been defined on port 'JD[6]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[6]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 22)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 6.600 ns has been defined on port 'JD[7]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[7]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 23)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 3.300 ns has been defined on port 'FTDI_RXD' relative to clock SYS_CLK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks SYS_CLK_VIRT] 3.300 [get_ports FTDI_RXD]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 25)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[0]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[1]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[2]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[3]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[4]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[5]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[6]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 6.600 ns has been defined on port 'JD[7]' relative to clock JTAG_TCK_VIRT for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks JTAG_TCK_VIRT] 6.600 [get_ports {JD[*]}]
+C:/Users/andy.zhang/work/fpga_proj/syntacore/project_1/project_1.srcs/constrs_1/imports/constrs_u/arty_scr1_timing.xdc (Line: 27)
+Related violations: <none>
+
+

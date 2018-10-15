@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1539589945">
+  <File Type="PA-TCL" Name="arty_scr1_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="arty_scr1_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="arty_scr1_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="arty_scr1_top.vds"/>
+  <File Type="RDS-UTIL" Name="arty_scr1_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="arty_scr1_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="arty_scr1_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="arty_scr1_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="arty_scr1_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/bd/system/system.bd"/>
+        <Attr Name="ImportTime" Val="1538135226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/sys_pll/sys_pll.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/bd/sys_pll/sys_pll.bd"/>
+        <Attr Name="ImportTime" Val="1538135226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_arch_description.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_arch_description.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/fpga-sdk-prj-master/arty/scr1/src/scr1_arch_custom.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/src/scr1_arch_custom.svh"/>
+        <Attr Name="ImportTime" Val="1538135226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_arch_types.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_arch_types.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_ipic.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_ipic.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_brkm.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_brkm.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_csr.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_csr.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_brkm_matcher.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_brkm_matcher.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_memif.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_memif.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_tapc.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_tapc.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_dbgc.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_dbgc.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_core_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_core_top.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_dbgc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_dbgc.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_ahb.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_ahb.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_dmem_ahb.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_dmem_ahb.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_dmem_router.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_dmem_router.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_dp_memory.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_dp_memory.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_imem_ahb.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_imem_ahb.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_imem_router.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_imem_router.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_ipic.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_ipic.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_riscv_isa_decoding.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_riscv_isa_decoding.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_brkm.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_brkm.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_csr.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_csr.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_dbga.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_dbga.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_exu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_exu.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/includes/scr1_search_ms1.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/includes/scr1_search_ms1.svh"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_ialu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_ialu.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_idu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_idu.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_ifu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_ifu.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_lsu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_lsu.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_mprf.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_mprf.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/pipeline/scr1_pipe_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/pipeline/scr1_pipe_top.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_sync_rstn.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_sync_rstn.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_tapc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_tapc.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_tapc_data_reg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_tapc_data_reg.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_tapc_shift_reg.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_tapc_shift_reg.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_tapc_synchronizer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_tapc_synchronizer.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_tcm.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_tcm.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_timer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_timer.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/top/scr1_top_ahb.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/top/scr1_top_ahb.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/fpga-sdk-prj-master/arty/scr1/src/arty_scr1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/src/arty_scr1.sv"/>
+        <Attr Name="ImportTime" Val="1538135226"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/syntacore/scr1-master/src/core/scr1_clk_ctrl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../scr1-master/src/core/scr1_clk_ctrl.sv"/>
+        <Attr Name="ImportTime" Val="1537459802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="arty_scr1_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs_u/arty_scr1_physical.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/constrs_u/arty_scr1_physical.xdc"/>
+        <Attr Name="ImportTime" Val="1539582250"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs_u/arty_scr1_synth.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/constrs_u/arty_scr1_synth.xdc"/>
+        <Attr Name="ImportTime" Val="1539582354"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs_u/arty_scr1_timing.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../fpga-sdk-prj-master/arty/scr1/constrs_u/arty_scr1_timing.xdc"/>
+        <Attr Name="ImportTime" Val="1539582395"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constrs_u/arty_scr1_timing.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="system_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_jtag_axi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sys_pll_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ahblite_axi_bridge_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_uart16550_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_ahblite_axi_bridge_1_0"/>
+</GenRun>
